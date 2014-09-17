@@ -1,0 +1,27 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Puzzlebot Prototype</title>
+
+    <script src="fabric.js"></script>
+
+  </head>
+  <ul>
+    <li><b>Drag</b> pieces into the grid 
+      to complete an image of the Eiffel Tower.
+    <li> <b>Tap/Click</b> piece to rotate. 
+    <li> <b>Submit</b> when you are done.
+    <li> Enjoy!
+  </ul>
+  <button type="button" onclick="startPuzzle()">Start Puzzle!</button>
+  <div>
+    <canvas class="upper-canvas" id="c" width="600" height="500" style="border: 1px solid rgb(170, 170, 170); position: absolute; width: 500px; height: 500px; left: 0px; top: 0px; -webkit-user-select: none; cursor: default;"></canvas>
+
+    <script src="qrototype.js"></script>
+    <script src="puzzle.js"></script>
+  </div>
+  <button type="button" onclick="resetHandler()">Reset</button>
+
+  <button type="button" onclick="submitHandler()">Submit</button>
+  <p id='completion_code'> </p>
+</html>

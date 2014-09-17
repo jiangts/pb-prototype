@@ -1,0 +1,25 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Puzzlebot Prototype</title>
+
+    <script src="fabric.js"></script>
+
+  </head>
+  <p>Drag the puzzle pieces into the grid below
+    to complete an image of Taylor Swift. Tap/Click piece to rotate. 
+    Submit when you are done.
+    Enjoy!
+  </p>
+  <button type="button" onclick="startPuzzle()">Start Puzzle!</button>
+  <div>
+    <canvas class="upper-canvas" id="c" width="900" height="500" style="border: 1px solid rgb(170, 170, 170); position: absolute; width: 500px; height: 500px; left: 0px; top: 0px; -webkit-user-select: none; cursor: default;"></canvas>
+
+    <script src="prototype.js"></script>
+    <script src="puzzle.js"></script>
+  </div>
+  <button type="button" onclick="resetHandler()">Reset</button>
+
+  <button type="button" onclick="submitHandler()">Submit</button>
+  <p id='completion_code'> </p>
+</html>
